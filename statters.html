@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STATTERS</title>
+        <link rel="stylesheet" href="statters.css">
+        <script src="statters.js"></script>
+    </head>
+    <body>
+        <p class="home"><a href="index.html">HOME</a></p>
+        <div class="it1"> 
+            <div class="st1" id="el1">Paneer 65</div>
+            <div class="st1 ano">RS: 100/-</div>
+            <button class="buu" id="myButton1">+</button>
+            <button class="buu"  id="mybut1"  onclick="onee()">-</button>
+            <p class="cou co1" id="result1"></p>
+        </div>
+        <div class="it2">
+            <div class="st2">Chicken 65</div>
+            <div class="st2 ano">RS: 80/-</div>
+            <button class="buu"  id="myButton2">+</button>
+            <button class="buu"  id="mybut2" onclick="twoo()" >-</button>
+            <p class="cou co2" id="result2"></p>
+        </div>
+        <div class="it3">
+            <div class="st3">Cheese pizza</div>
+            <div class="st3 ano">RS: 120/-</div>
+            <button class="buu"  id="myButton3">+</button>
+            <button class="buu"  id="mybut3" onclick="threee()">-</button>
+            <p class="cou co3" id="result3"></p>
+        </div>
+        <div class="it4">
+            <div class="st4">Chilli Chicken</div>
+            <div class="st4 ano">RS: 70/-</div>
+            <button class="buu"  id="myButton4">+</button>
+            <button class="buu" id="mybut4"  onclick="fourr()">-</button>
+            <p class="cou co4" id="result4"></p>
+        </div>
+
+        <div class="sub">
+            <p class="headi">Items Selected</p>
+            <p class="subs" id="subblock1"></p>
+            <p class="subs" id="subblock2"></p>
+            <p class="subs" id="subblock3"></p>
+            <p class="subs" id="subblock4"></p>
+        </div>
+
+        <div class="totdiv">
+            <p class="tot" id="total"></p>
+        </div>
+
+        <button class="butt2" onclick="submit()">SUBMIT</button>
+
+        <div class="payd" id="paydiv">
+            <p class="payb" id="paybut"></p>
+        </div>
+        
+        <button class="payn" id="paynow"><a href="pay.html">PAY NOW</a></button>
+        
+        <script>
+            
+            let count1 = 0;
+            let button1 = document.getElementById("myButton1");
+            let result1 = document.getElementById("result1");
+            button1.onclick = function one() {
+               count1++;
+               result1.innerHTML = count1+" Order";
+            }
+            function onee(){
+                count1=count1-1;
+                result1.innerHTML = count1+" Order";
+                if(count1<0){
+                    alert("Negative orders can't be placed");
+                    let count1=0;
+                    result1.innerHTML = count1+" Order";
+                }
+            }
+        
+            let count2 = 0;
+            let button2 = document.getElementById("myButton2");
+            let result2 = document.getElementById("result2");
+            button2.onclick = function two() {
+               count2++;
+               result2.innerHTML = count2+" Order";
+            }
+
+            function twoo(){
+                count2=count2-1;
+                result2.innerHTML = count2+" Order";
+                if(count2<0){
+                    alert("Negative orders can't be placed");
+                    let count2=0;
+                    result2.innerHTML = count2+" Order";
+                }
+            }
+        
+            let count3 = 0;
+            let button3 = document.getElementById("myButton3");
+            let result3 = document.getElementById("result3");
+            button3.onclick = function three() {
+               count3++;
+               result3.innerHTML = count3+" Order";
+            }
+
+            function threee(){
+                count3=count3-1;
+                result3.innerHTML = count3+" Order";
+                if(count3<0){
+                    alert("Negative orders can't be placed");
+                    let count3=0;
+                    result3.innerHTML = count3+" Order";
+                }
+            }
+       
+            let count4 = 0;
+            let button4 = document.getElementById("myButton4");
+            let result4 = document.getElementById("result4");
+            button4.onclick = function four() {
+               count4++;
+               result4.innerHTML = count4+" Order";
+            }
+
+            function fourr(){
+                count4=count4-1;
+                result4.innerHTML = count4+" Order";
+                if(count4<0){
+                    alert("Negative orders can't be placed");
+                    let count4=0;
+                    result4.innerHTML = count4+" Order";
+                }
+            }
+
+            let rup1 = 100;
+            let rup2 = 80;
+            let rup3 = 120;
+            let rup4 = 70;
+            let tota = 0;
+            let total = document.getElementById("total");
+            let paynow = document.getElementById("paynow");
+            let paybut = document.getElementById("paybut");
+            let paydivision = document.getElementById("paydivision");
+            let qrid = document.getElementById("qrid");
+            
+
+            function pay(){
+                if(count1>0 || count2>0 || count3>0 || count4>0){
+                    paydivision.innerHTML = qrid;
+                }
+                else{
+                    alert("Select atleast one dish and click sumbit before you pay")
+                }
+            }
+            
+            let subblock1 = document.getElementById("subblock1");
+            let subblock2 = document.getElementById("subblock2");
+            let subblock3 = document.getElementById("subblock3");
+            let subblock4 = document.getElementById("subblock4");
+            function submit(){
+                if(count1>0 || count2>0 || count3>0 || count4>0){
+                    if(1<2){
+                        tota= count1*rup1+count2*rup2+count3*rup3+count4*rup4;
+                        total.innerHTML = "Total amount : " + tota;
+                    }
+                    if(count1>0){
+                        subblock1.innerHTML = "Paneer 65"+" - "+count1;
+                    }
+                    if(count2>0){
+                        subblock2.innerHTML = "chicken 65"+" - "+count2;
+                    }
+                    if(count3>0){
+                        subblock3.innerHTML = "Cheese Pizza"+" - "+count3;
+                    }
+                    if(count4>0){
+                        subblock4.innerHTML = "Chilli Chicken"+" - "+count4;
+                    }
+                }
+                else{
+                    alert("Select one item atleast and then click alert")
+                }
+            }
+           
+
+        </script>
+        
+    </body>
+</html>

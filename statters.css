@@ -1,0 +1,257 @@
+body{
+  background-size: cover;
+  background-image: url("https://images5.alphacoders.com/381/381504.jpg");
+}
+
+.stat{
+    color: white;
+    padding-top: 200px;
+    padding-left:200px;
+    font-size:20px;
+}
+
+.home{
+  background-color: wheat ;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 1300px;
+  color: white;
+
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid white;
+
+
+}
+
+/*.st{
+    border-left: red;
+    background-color: black;
+    width:150px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    position: relative;
+}
+
+.cc{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    width:100px;
+    height: 40px;
+    border: 2px solid white;
+    margin-left: 500px ;
+    
+}*/
+
+.it1{
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 500px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.st1{
+  display: inline-block;
+  background-color: black;
+  border: 2px solid white;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  width: 100px;
+  
+}
+
+.it2{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    width: 500px;
+    margin-left: 100px;
+  }
+  .st2{
+    display: inline-block;
+    background-color: black;
+    border: 2px solid white;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 100px;
+  }
+
+  
+.it3{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    width: 500px;
+    margin-left: 100px;
+  }
+  .st3{
+    display: inline-block;
+    background-color: black;
+    border: 2px solid white;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 100px;
+  }
+
+  
+.it4{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    width: 500px;
+    margin-left: 100px;
+    
+  }
+
+  .st4{
+    display: inline-block;
+    background-color: black;
+    border: 2px solid white;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 100px;
+  }
+
+.but{
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ano{
+    margin-right: 30px;
+}
+.cou{
+  padding-left: 30px;
+    display: inline-block;
+}
+
+.sub{
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-left: 400px;
+  height: 200px;
+  border: 2px solid whitesmoke;
+  width: 200px;
+  margin-top: -500px;
+  margin-left: 800px;
+}
+
+.headi{
+  font-size: 20px;
+  text-decoration: underline;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.butt2{
+  margin-left: 870px;
+  margin-top: 20px;
+  background-color:black;
+  color: whitesmoke;
+  border: 2px solid white;
+  padding: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0.8;
+}
+
+.butt2:hover{
+  opacity: 1.0;
+}
+.tot{
+  background-color: black;
+  border-left: 5px solid red;
+  width: 200px;
+  text-align: center;
+  color: white;
+  margin-left: 800px;
+  font-size: 20px;
+}
+
+.pa{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  margin-left: 850px;
+  width: 100px;
+  text-align: center;
+  margin-top: 20px;
+  height: 20px;
+}
+
+.payn{
+  background-color: wheat;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid white;
+  margin-left: 830px;
+  height: 40px;
+  opacity: 0.8;
+  width: 150px;
+}
+
+.payn:hover{
+  opacity: 1.0;
+}
+
+.payd{
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-left: 800px;
+ 
+  
+}
+
+.qrcl{
+  background-image: url("https://5.imimg.com/data5/SELLER/Default/2022/3/PN/DB/EF/139769707/qr-code-label-250x250.png");
+  width: 260px;
+  height: 260px;
+  margin-left: 1100px;
+  margin-top: -400px;
+  color: white;
+}
+
+.newqrcl{
+  background-color: black;
+
+}
+
+.buu{
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 20px;
+  width: 40px;
+
+}
+
+.buu:hover{
+  opacity: 1.0;
+}
+
+
